@@ -5,6 +5,7 @@ This Python script automates Luma calendar tasks including login, calendar creat
 ## Features
 
 - Discover events by geographic location (city name or zip code) -> right now it focuses on SF. 
+- Scrape "Speaker name, Title, Company and Event time, Event summary (in 2 sentences) from the events that match the keywords. (This part is not done yet)
 - Add events to calendars with deduplication to avoid adding duplicate events
 - Command-line interface with various configuration options
 
