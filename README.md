@@ -4,9 +4,7 @@ This Python script automates Luma calendar tasks including login, calendar creat
 
 ## Features
 
-- Login to Luma using email/password or Google authentication
-- Create new calendars with dynamic naming based on the current date
-- Discover events by geographic location (city name or zip code)
+- Discover events by geographic location (city name or zip code) -> right now it focuses on SF. 
 - Add events to calendars with deduplication to avoid adding duplicate events
 - Command-line interface with various configuration options
 
