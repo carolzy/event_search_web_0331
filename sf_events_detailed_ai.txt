@@ -1,0 +1,74 @@
+Luma SF Events Detailed Results
+Search keywords: AI
+Generated on 2025-03-31 04:21:56
+
+Event 1:
+Title: Hosted By
+Speakers:
+  - Dave Nielsen, Max Alexy Khrabrov
+Summary: No summary available
+URL: https://lu.ma/e/evt-UgdpwTwZmwJ3hIf
+
+Event 2:
+Title: Hosted By
+Speakers:
+  - Andre Landgraf, Neon Raouf Chebri Bobur Umurzokov Gabriela de Queiroz AI Inclusive
+Summary: No summary available
+URL: https://lu.ma/e/evt-q3OCwYpN6zHKuMK
+
+Event 3:
+Title: Hosted By
+Speakers:
+  - Justin Dorfman, YK Frances Coronel Madison Kanna
+Summary: No summary available
+URL: https://lu.ma/e/evt-C7OVVojWXmbe28F
+
+Event 4:
+Title: Hosted By
+Speakers:
+  - Andre Landgraf, Erik Thorelli AWS GenAI Loft Sean Strong
+Summary: No summary available
+URL: https://lu.ma/e/evt-hMrMdGcrk8XOnuF
+
+Event 5:
+Title: Hosted By
+Speakers:
+  - Melissa Herrera, Carter Rabasa Sahar Mor
+Summary: No summary available
+URL: https://lu.ma/e/evt-KFLcMC8Goknr416
+
+Event 6:
+Title: Hosted By
+Speakers:
+  - Jess L, Andrew Benton Kyle Gray
+Summary: No summary available
+URL: https://lu.ma/e/evt-Y4hQzM7EKYUHotY
+
+Event 7:
+Title: Hosted By
+Speakers:
+  - Adam Chan, Nele Uhlemann Fiberplane Weaviate
+Summary: No summary available
+URL: https://lu.ma/e/evt-6eXHgqmZPSWpnCV
+
+Event 8:
+Title: Hosted By
+Speakers:
+  - Maya Nayyar
+Summary: No summary available
+URL: https://lu.ma/e/evt-NeZ0GmEZAYH1i4f
+
+Event 9:
+Title: Hosted By
+Speakers:
+  - Cyril Attia, Alison Granger Hector Miramontes
+Summary: No summary available
+URL: https://lu.ma/e/evt-wbpai7lQ3hCi9tT
+
+Event 10:
+Title: Hosted By
+Speakers:
+  - Cyril Attia, Alison Granger
+Summary: No summary available
+URL: https://lu.ma/e/evt-VZ8W8TkC35Ihdwx
+

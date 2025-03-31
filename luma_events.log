@@ -1,0 +1,318 @@
+2025-03-30 23:37:01,830 - __main__ - INFO - Initializing WebDriver
+2025-03-30 23:37:06,646 - __main__ - INFO - Location 'San Francisco' identified as San Francisco related, using SF-specific page
+2025-03-30 23:37:32,182 - __main__ - ERROR - Failed to navigate to events page: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000104c8b6c8 cxxbridge1$str$ptr + 2791212
+1   chromedriver                        0x0000000104c83c9c cxxbridge1$str$ptr + 2759936
+2   chromedriver                        0x00000001047d5e30 cxxbridge1$string$len + 92928
+3   chromedriver                        0x000000010481d170 cxxbridge1$string$len + 384576
+4   chromedriver                        0x000000010485e5f8 cxxbridge1$string$len + 651976
+5   chromedriver                        0x00000001048112fc cxxbridge1$string$len + 335820
+6   chromedriver                        0x0000000104c506c4 cxxbridge1$str$ptr + 2549544
+7   chromedriver                        0x0000000104c53988 cxxbridge1$str$ptr + 2562540
+8   chromedriver                        0x0000000104c3071c cxxbridge1$str$ptr + 2418560
+9   chromedriver                        0x0000000104c541e8 cxxbridge1$str$ptr + 2564684
+10  chromedriver                        0x0000000104c21750 cxxbridge1$str$ptr + 2357172
+11  chromedriver                        0x0000000104c73f58 cxxbridge1$str$ptr + 2695100
+12  chromedriver                        0x0000000104c740e0 cxxbridge1$str$ptr + 2695492
+13  chromedriver                        0x0000000104c83910 cxxbridge1$str$ptr + 2759028
+14  libsystem_pthread.dylib             0x000000018c4effa8 _pthread_start + 148
+15  libsystem_pthread.dylib             0x000000018c4eada0 thread_start + 8
+
+2025-03-30 23:37:32,182 - __main__ - ERROR - Failed to navigate to events page. Exiting.
+2025-03-30 23:37:32,182 - __main__ - INFO - Closing WebDriver
+2025-03-30 23:47:54,500 - __main__ - INFO - Initializing WebDriver using webdriver-manager
+2025-03-30 23:47:54,500 - WDM - INFO - ====== WebDriver manager ======
+2025-03-30 23:47:54,666 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-03-30 23:47:54,754 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-03-30 23:47:54,822 - WDM - INFO - Driver [/Users/carol.zhu/.wdm/drivers/chromedriver/mac64/134.0.6998.165/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-03-30 23:47:54,825 - __main__ - ERROR - An error occurred: [Errno 8] Exec format error: '/Users/carol.zhu/.wdm/drivers/chromedriver/mac64/134.0.6998.165/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
+2025-03-30 23:47:54,829 - __main__ - ERROR - Traceback (most recent call last):
+  File "/Users/carol.zhu/Documents/luma_calendar_automation/luma_events_with_keywords.py", line 376, in main
+    driver = webdriver.Chrome(service=service, options=options)
+  File "/Users/carol.zhu/Documents/luma_calendar_automation/path/to/venv/lib/python3.13/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/carol.zhu/Documents/luma_calendar_automation/path/to/venv/lib/python3.13/site-packages/selenium/webdriver/chromium/webdriver.py", line 55, in __init__
+    self.service.start()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/carol.zhu/Documents/luma_calendar_automation/path/to/venv/lib/python3.13/site-packages/selenium/webdriver/common/service.py", line 109, in start
+    self._start_process(self._path)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/carol.zhu/Documents/luma_calendar_automation/path/to/venv/lib/python3.13/site-packages/selenium/webdriver/common/service.py", line 219, in _start_process
+    self.process = subprocess.Popen(
+                   ~~~~~~~~~~~~~~~~^
+        cmd,
+        ^^^^
+    ...<7 lines>...
+        **self.popen_kw,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 1038, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 1974, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+OSError: [Errno 8] Exec format error: '/Users/carol.zhu/.wdm/drivers/chromedriver/mac64/134.0.6998.165/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
+
+2025-03-31 02:40:02,886 - __main__ - INFO - Initializing WebDriver
+2025-03-31 02:40:02,887 - __main__ - INFO - Using Selenium's built-in driver management
+2025-03-31 02:40:06,408 - __main__ - INFO - WebDriver initialized with wait time: 5 seconds
+2025-03-31 02:40:06,408 - __main__ - INFO - Location 'San Francisco' identified as San Francisco related, using SF-specific page
+2025-03-31 02:40:12,979 - __main__ - INFO - Current URL after navigation: https://lu.ma/sf
+2025-03-31 02:40:23,494 - __main__ - WARNING - No event elements found with standard selectors. Will try alternative extraction methods.
+2025-03-31 02:40:23,494 - __main__ - INFO - Successfully navigated to events page
+2025-03-31 02:40:23,494 - __main__ - INFO - Extracting up to 50 events with keywords: founder,startup,tech
+2025-03-31 02:40:23,494 - __main__ - INFO - Extracting up to 50 events
+2025-03-31 02:40:23,494 - __main__ - INFO - Filtering events by keywords: ['founder', 'startup', 'tech']
+2025-03-31 02:40:28,561 - __main__ - INFO - No events found with standard selectors, trying alternative selectors
+2025-03-31 02:40:33,595 - __main__ - INFO - Still no events found, trying more generic approach
+2025-03-31 02:40:33,608 - __main__ - INFO - Found 45 potential event elements on page 1
+2025-03-31 02:44:23,718 - __main__ - INFO - Closing WebDriver
+2025-03-31 02:44:23,722 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1064f8410>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/816970a430603cb26a4fcbfedf2ac02e
+2025-03-31 02:44:23,723 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1064f8a50>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/816970a430603cb26a4fcbfedf2ac02e
+2025-03-31 02:44:23,724 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106413360>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/816970a430603cb26a4fcbfedf2ac02e
+2025-03-31 02:44:43,231 - __main__ - INFO - Initializing WebDriver
+2025-03-31 02:44:43,231 - __main__ - INFO - Using Selenium's built-in driver management
+2025-03-31 02:44:44,906 - __main__ - INFO - WebDriver initialized with wait time: 5 seconds
+2025-03-31 02:44:44,906 - __main__ - INFO - Location 'San Francisco' identified as San Francisco related, using SF-specific page
+2025-03-31 02:44:46,432 - __main__ - INFO - Screenshot saved: sf_page_initial.png
+2025-03-31 02:44:51,454 - __main__ - INFO - Current URL after navigation: https://lu.ma/sf
+2025-03-31 02:45:02,023 - __main__ - WARNING - No event elements found with standard selectors. Will try alternative extraction methods.
+2025-03-31 02:45:02,537 - __main__ - INFO - Screenshot saved: events_page_loaded.png
+2025-03-31 02:45:02,537 - __main__ - INFO - Successfully navigated to events page
+2025-03-31 02:45:02,537 - __main__ - INFO - Extracting up to 50 events with keywords: AI
+2025-03-31 02:45:02,537 - __main__ - INFO - Extracting up to 50 events
+2025-03-31 02:45:02,537 - __main__ - INFO - Filtering events by keywords: ['ai']
+2025-03-31 02:45:07,575 - __main__ - INFO - No events found with standard selectors, trying alternative selectors
+2025-03-31 02:45:12,586 - __main__ - INFO - Still no events found, trying more generic approach
+2025-03-31 02:45:12,601 - __main__ - INFO - Found 45 potential event elements on page 1
+2025-03-31 02:45:12,839 - __main__ - INFO - Screenshot saved: events_page_1.png
+2025-03-31 02:46:38,789 - __main__ - INFO - Closing WebDriver
+2025-03-31 02:46:38,793 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1059dca50>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/22cffef1566416eac9ffef06dda89346
+2025-03-31 02:46:38,795 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1059dc690>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/22cffef1566416eac9ffef06dda89346
+2025-03-31 02:46:38,795 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1058f3360>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/22cffef1566416eac9ffef06dda89346
+2025-03-31 02:46:41,036 - __main__ - INFO - Initializing WebDriver
+2025-03-31 02:46:41,036 - __main__ - INFO - Using Selenium's built-in driver management
+2025-03-31 02:46:41,818 - __main__ - INFO - WebDriver initialized with wait time: 5 seconds
+2025-03-31 02:46:41,818 - __main__ - INFO - Location 'San Francisco' identified as San Francisco related, using SF-specific page
+2025-03-31 02:46:47,313 - __main__ - INFO - Current URL after navigation: https://lu.ma/sf
+2025-03-31 02:46:57,935 - __main__ - WARNING - No event elements found with standard selectors. Will try alternative extraction methods.
+2025-03-31 02:46:57,936 - __main__ - INFO - Successfully navigated to events page
+2025-03-31 02:46:57,936 - __main__ - INFO - Extracting up to 5 events
+2025-03-31 02:46:57,936 - __main__ - INFO - Extracting up to 5 events
+2025-03-31 02:47:02,996 - __main__ - INFO - No events found with standard selectors, trying alternative selectors
+2025-03-31 02:47:08,031 - __main__ - INFO - Still no events found, trying more generic approach
+2025-03-31 02:47:08,044 - __main__ - INFO - Found 44 potential event elements on page 1
+2025-03-31 02:48:09,700 - __main__ - INFO - Closing WebDriver
+2025-03-31 02:48:09,709 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1039e8550>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/c3dfccdbfb9f542ff70f0fc30072bfb8
+2025-03-31 02:48:09,721 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1039e8690>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/c3dfccdbfb9f542ff70f0fc30072bfb8
+2025-03-31 02:48:09,722 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103903360>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/c3dfccdbfb9f542ff70f0fc30072bfb8
+2025-03-31 02:57:21,926 - __main__ - INFO - Initializing WebDriver
+2025-03-31 02:57:21,926 - __main__ - INFO - Using Selenium's built-in driver management
+2025-03-31 02:57:23,518 - __main__ - INFO - WebDriver initialized with wait time: 5 seconds
+2025-03-31 02:57:23,518 - __main__ - INFO - Navigating to Luma homepage
+2025-03-31 02:57:29,991 - __main__ - INFO - Looking for search button
+2025-03-31 02:57:39,063 - __main__ - ERROR - Error finding search button: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-03-31 02:57:39,064 - __main__ - INFO - Could not find search button, trying direct search URL
+2025-03-31 02:57:39,064 - __main__ - INFO - Navigating to search URL: https://lu.ma/search?q=AI
+2025-03-31 02:57:39,078 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101fe07d0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/230300ee82f7f03ab98584bd0349b2bf/url
+2025-03-31 02:57:39,082 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101fe02d0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/230300ee82f7f03ab98584bd0349b2bf/url
+2025-03-31 02:57:39,083 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101ef3360>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/230300ee82f7f03ab98584bd0349b2bf/url
+2025-03-31 02:57:39,084 - __main__ - ERROR - Failed to search for events: HTTPConnectionPool(host='localhost', port=62258): Max retries exceeded with url: /session/230300ee82f7f03ab98584bd0349b2bf/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101ef3820>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-03-31 02:57:39,084 - __main__ - ERROR - Failed to search for events. Exiting.
+2025-03-31 02:57:39,084 - __main__ - INFO - Closing WebDriver
+2025-03-31 02:57:39,087 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101f59a30>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/230300ee82f7f03ab98584bd0349b2bf
+2025-03-31 02:57:39,088 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101f03790>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/230300ee82f7f03ab98584bd0349b2bf
+2025-03-31 02:57:39,089 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101f03ac0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/230300ee82f7f03ab98584bd0349b2bf
+2025-03-31 02:59:17,323 - __main__ - INFO - Initializing WebDriver
+2025-03-31 02:59:17,323 - __main__ - INFO - Using Selenium's built-in driver management
+2025-03-31 02:59:18,284 - __main__ - INFO - WebDriver initialized with wait time: 5 seconds
+2025-03-31 02:59:18,284 - __main__ - INFO - Navigating to Luma homepage
+2025-03-31 02:59:25,219 - __main__ - INFO - Looking for search button
+2025-03-31 02:59:45,240 - __main__ - INFO - Closing WebDriver
+2025-03-31 02:59:45,252 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10618c7d0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/ff03b6dc59380127a62364002e7ec2fc
+2025-03-31 02:59:45,255 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10618c2d0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/ff03b6dc59380127a62364002e7ec2fc
+2025-03-31 02:59:45,259 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10609f230>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/ff03b6dc59380127a62364002e7ec2fc
+2025-03-31 03:02:56,086 - __main__ - INFO - Initializing WebDriver
+2025-03-31 03:02:56,086 - __main__ - INFO - Using Selenium's built-in driver management
+2025-03-31 03:02:57,029 - __main__ - INFO - WebDriver initialized with wait time: 5 seconds
+2025-03-31 03:02:57,030 - __main__ - INFO - Navigating to Luma SF page
+2025-03-31 03:03:09,954 - __main__ - INFO - Looking for search button
+2025-03-31 03:03:09,975 - __main__ - INFO - Found 1 potential search buttons
+2025-03-31 03:03:10,041 - __main__ - INFO - Clicked search button
+2025-03-31 03:03:12,377 - __main__ - INFO - Entered search keywords: AI
+2025-03-31 03:03:17,382 - __main__ - INFO - Extracting up to 50 events from search results
+2025-03-31 03:03:17,383 - __main__ - INFO - Extracting up to 50 events from search results
+2025-03-31 03:03:22,396 - __main__ - INFO - Current URL: https://lu.ma/sf
+2025-03-31 03:03:27,422 - __main__ - INFO - No events found with standard selectors, trying alternative selectors
+2025-03-31 03:03:27,434 - __main__ - INFO - Found 13 potential event elements in search results
+2025-03-31 03:04:32,911 - __main__ - INFO - Successfully extracted 0 events from search results
+2025-03-31 03:04:32,912 - __main__ - ERROR - No events found in search results. Exiting.
+2025-03-31 03:04:32,912 - __main__ - INFO - Closing WebDriver
+2025-03-31 03:12:22,308 - __main__ - INFO - Initializing WebDriver
+2025-03-31 03:12:22,308 - __main__ - INFO - Using Selenium's built-in driver management
+2025-03-31 03:12:23,872 - __main__ - INFO - WebDriver initialized with wait time: 5 seconds
+2025-03-31 03:12:23,872 - __main__ - INFO - Navigating to Luma SF page
+2025-03-31 03:12:29,337 - __main__ - INFO - Looking for search button
+2025-03-31 03:12:29,353 - __main__ - INFO - Found 1 potential search buttons
+2025-03-31 03:12:29,416 - __main__ - INFO - Clicked search button
+2025-03-31 03:12:31,516 - __main__ - INFO - Entered search keywords: AI
+2025-03-31 03:12:36,522 - __main__ - INFO - Finding up to 10 event links
+2025-03-31 03:12:36,523 - __main__ - INFO - Finding up to 10 event links from search results
+2025-03-31 03:12:41,533 - __main__ - INFO - Current URL: https://lu.ma/sf
+2025-03-31 03:12:46,592 - __main__ - INFO - Found 13 direct event links
+2025-03-31 03:12:46,597 - __main__ - INFO - Added event link: https://lu.ma/e/evt-UgdpwTwZmwJ3hIf
+2025-03-31 03:12:46,599 - __main__ - INFO - Added event link: https://lu.ma/e/evt-q3OCwYpN6zHKuMK
+2025-03-31 03:12:46,601 - __main__ - INFO - Added event link: https://lu.ma/e/evt-C7OVVojWXmbe28F
+2025-03-31 03:12:46,602 - __main__ - INFO - Added event link: https://lu.ma/e/evt-hMrMdGcrk8XOnuF
+2025-03-31 03:12:46,604 - __main__ - INFO - Added event link: https://lu.ma/e/evt-KFLcMC8Goknr416
+2025-03-31 03:12:46,606 - __main__ - INFO - Added event link: https://lu.ma/e/evt-Y4hQzM7EKYUHotY
+2025-03-31 03:12:46,608 - __main__ - INFO - Added event link: https://lu.ma/e/evt-6eXHgqmZPSWpnCV
+2025-03-31 03:12:46,609 - __main__ - INFO - Added event link: https://lu.ma/e/evt-NeZ0GmEZAYH1i4f
+2025-03-31 03:12:46,611 - __main__ - INFO - Added event link: https://lu.ma/e/evt-wbpai7lQ3hCi9tT
+2025-03-31 03:12:46,613 - __main__ - INFO - Added event link: https://lu.ma/e/evt-VZ8W8TkC35Ihdwx
+2025-03-31 03:12:46,613 - __main__ - INFO - Found 10 event links
+2025-03-31 03:12:46,613 - __main__ - INFO - Found 10 event links
+2025-03-31 03:12:46,613 - __main__ - INFO - Processing event 1/10: https://lu.ma/e/evt-UgdpwTwZmwJ3hIf
+2025-03-31 03:12:46,613 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-UgdpwTwZmwJ3hIf
+2025-03-31 03:12:52,988 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 03:12:53,016 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 03:13:10,156 - __main__ - INFO - Processing event 2/10: https://lu.ma/e/evt-q3OCwYpN6zHKuMK
+2025-03-31 03:13:10,157 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-q3OCwYpN6zHKuMK
+2025-03-31 03:13:16,697 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 03:13:16,726 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 03:13:33,832 - __main__ - INFO - Processing event 3/10: https://lu.ma/e/evt-C7OVVojWXmbe28F
+2025-03-31 03:13:33,834 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-C7OVVojWXmbe28F
+2025-03-31 03:13:39,674 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 03:13:39,703 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 03:13:56,821 - __main__ - INFO - Processing event 4/10: https://lu.ma/e/evt-hMrMdGcrk8XOnuF
+2025-03-31 03:13:56,822 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-hMrMdGcrk8XOnuF
+2025-03-31 03:14:02,581 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 03:14:02,607 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 03:14:19,726 - __main__ - INFO - Processing event 5/10: https://lu.ma/e/evt-KFLcMC8Goknr416
+2025-03-31 03:14:19,727 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-KFLcMC8Goknr416
+2025-03-31 03:14:25,248 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 03:14:25,273 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 03:14:42,335 - __main__ - INFO - Processing event 6/10: https://lu.ma/e/evt-Y4hQzM7EKYUHotY
+2025-03-31 03:14:42,337 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-Y4hQzM7EKYUHotY
+2025-03-31 03:14:48,036 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 03:14:48,061 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 03:15:05,171 - __main__ - INFO - Processing event 7/10: https://lu.ma/e/evt-6eXHgqmZPSWpnCV
+2025-03-31 03:15:05,173 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-6eXHgqmZPSWpnCV
+2025-03-31 03:15:11,095 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 03:15:11,124 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 03:15:28,225 - __main__ - INFO - Processing event 8/10: https://lu.ma/e/evt-NeZ0GmEZAYH1i4f
+2025-03-31 03:15:28,228 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-NeZ0GmEZAYH1i4f
+2025-03-31 03:15:34,136 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 03:15:34,151 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 03:15:51,234 - __main__ - INFO - Processing event 9/10: https://lu.ma/e/evt-wbpai7lQ3hCi9tT
+2025-03-31 03:15:51,235 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-wbpai7lQ3hCi9tT
+2025-03-31 03:15:57,620 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 03:15:57,640 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 03:16:14,701 - __main__ - INFO - Processing event 10/10: https://lu.ma/e/evt-VZ8W8TkC35Ihdwx
+2025-03-31 03:16:14,703 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-VZ8W8TkC35Ihdwx
+2025-03-31 03:16:20,644 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 03:16:20,658 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 03:16:35,742 - __main__ - INFO - Event scraping completed successfully
+2025-03-31 03:16:35,743 - __main__ - INFO - Total events processed: 10
+2025-03-31 03:16:35,743 - __main__ - INFO - Events saved to: sf_events_detailed_ai.txt
+2025-03-31 03:16:35,743 - __main__ - INFO - Closing WebDriver
+2025-03-31 04:17:40,729 - __main__ - INFO - Initializing WebDriver
+2025-03-31 04:17:40,729 - __main__ - INFO - Using Selenium's built-in driver management
+2025-03-31 04:17:43,226 - __main__ - INFO - WebDriver initialized with wait time: 5 seconds
+2025-03-31 04:17:43,226 - __main__ - INFO - Navigating to Luma SF page
+2025-03-31 04:17:49,357 - __main__ - INFO - Looking for search button
+2025-03-31 04:17:49,391 - __main__ - INFO - Found 1 potential search buttons
+2025-03-31 04:17:49,451 - __main__ - INFO - Clicked search button
+2025-03-31 04:17:51,535 - __main__ - INFO - Entered search keywords: AI
+2025-03-31 04:17:56,538 - __main__ - INFO - Finding up to 10 event links
+2025-03-31 04:17:56,538 - __main__ - INFO - Finding up to 10 event links from search results
+2025-03-31 04:18:01,544 - __main__ - INFO - Current URL: https://lu.ma/sf
+2025-03-31 04:18:06,596 - __main__ - INFO - Found 13 direct event links
+2025-03-31 04:18:06,611 - __main__ - INFO - Added event link: https://lu.ma/e/evt-UgdpwTwZmwJ3hIf
+2025-03-31 04:18:06,614 - __main__ - INFO - Added event link: https://lu.ma/e/evt-q3OCwYpN6zHKuMK
+2025-03-31 04:18:06,616 - __main__ - INFO - Added event link: https://lu.ma/e/evt-C7OVVojWXmbe28F
+2025-03-31 04:18:06,617 - __main__ - INFO - Added event link: https://lu.ma/e/evt-hMrMdGcrk8XOnuF
+2025-03-31 04:18:06,619 - __main__ - INFO - Added event link: https://lu.ma/e/evt-KFLcMC8Goknr416
+2025-03-31 04:18:06,621 - __main__ - INFO - Added event link: https://lu.ma/e/evt-Y4hQzM7EKYUHotY
+2025-03-31 04:18:06,623 - __main__ - INFO - Added event link: https://lu.ma/e/evt-6eXHgqmZPSWpnCV
+2025-03-31 04:18:06,626 - __main__ - INFO - Added event link: https://lu.ma/e/evt-NeZ0GmEZAYH1i4f
+2025-03-31 04:18:06,628 - __main__ - INFO - Added event link: https://lu.ma/e/evt-wbpai7lQ3hCi9tT
+2025-03-31 04:18:06,630 - __main__ - INFO - Added event link: https://lu.ma/e/evt-VZ8W8TkC35Ihdwx
+2025-03-31 04:18:06,630 - __main__ - INFO - Found 10 event links
+2025-03-31 04:18:06,630 - __main__ - INFO - Found 10 event links
+2025-03-31 04:18:06,630 - __main__ - INFO - Processing event 1/10: https://lu.ma/e/evt-UgdpwTwZmwJ3hIf
+2025-03-31 04:18:06,630 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-UgdpwTwZmwJ3hIf
+2025-03-31 04:18:13,213 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 04:18:13,239 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 04:18:30,375 - __main__ - INFO - Processing event 2/10: https://lu.ma/e/evt-q3OCwYpN6zHKuMK
+2025-03-31 04:18:30,377 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-q3OCwYpN6zHKuMK
+2025-03-31 04:18:36,284 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 04:18:36,314 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 04:18:53,448 - __main__ - INFO - Processing event 3/10: https://lu.ma/e/evt-C7OVVojWXmbe28F
+2025-03-31 04:18:53,450 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-C7OVVojWXmbe28F
+2025-03-31 04:18:59,413 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 04:18:59,443 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 04:19:16,597 - __main__ - INFO - Processing event 4/10: https://lu.ma/e/evt-hMrMdGcrk8XOnuF
+2025-03-31 04:19:16,599 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-hMrMdGcrk8XOnuF
+2025-03-31 04:19:22,493 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 04:19:22,518 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 04:19:39,665 - __main__ - INFO - Processing event 5/10: https://lu.ma/e/evt-KFLcMC8Goknr416
+2025-03-31 04:19:39,666 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-KFLcMC8Goknr416
+2025-03-31 04:19:45,967 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 04:19:45,983 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 04:20:03,049 - __main__ - INFO - Processing event 6/10: https://lu.ma/e/evt-Y4hQzM7EKYUHotY
+2025-03-31 04:20:03,051 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-Y4hQzM7EKYUHotY
+2025-03-31 04:20:08,910 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 04:20:08,930 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 04:20:25,989 - __main__ - INFO - Processing event 7/10: https://lu.ma/e/evt-6eXHgqmZPSWpnCV
+2025-03-31 04:20:25,991 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-6eXHgqmZPSWpnCV
+2025-03-31 04:20:31,803 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 04:20:31,829 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 04:20:48,869 - __main__ - INFO - Processing event 8/10: https://lu.ma/e/evt-NeZ0GmEZAYH1i4f
+2025-03-31 04:20:48,870 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-NeZ0GmEZAYH1i4f
+2025-03-31 04:20:54,764 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 04:20:54,778 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 04:21:11,875 - __main__ - INFO - Processing event 9/10: https://lu.ma/e/evt-wbpai7lQ3hCi9tT
+2025-03-31 04:21:11,877 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-wbpai7lQ3hCi9tT
+2025-03-31 04:21:18,180 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 04:21:18,203 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 04:21:35,349 - __main__ - INFO - Processing event 10/10: https://lu.ma/e/evt-VZ8W8TkC35Ihdwx
+2025-03-31 04:21:35,352 - __main__ - INFO - Extracting details from event: https://lu.ma/e/evt-VZ8W8TkC35Ihdwx
+2025-03-31 04:21:41,197 - __main__ - INFO - Extracted event title: Hosted By
+2025-03-31 04:21:41,212 - __main__ - INFO - Extracted 1 speakers
+2025-03-31 04:21:56,325 - __main__ - INFO - Event scraping completed successfully
+2025-03-31 04:21:56,326 - __main__ - INFO - Total events processed: 10
+2025-03-31 04:21:56,326 - __main__ - INFO - Events saved to: sf_events_detailed_ai.txt
+2025-03-31 04:21:56,326 - __main__ - INFO - Closing WebDriver
+2025-03-31 14:46:49,262 - __main__ - INFO - Initializing WebDriver
+2025-03-31 14:46:49,262 - __main__ - INFO - Using Selenium's built-in driver management
+2025-03-31 14:46:52,701 - __main__ - INFO - WebDriver initialized with wait time: 5 seconds
+2025-03-31 14:46:52,701 - __main__ - INFO - Navigating to Luma SF page
+2025-03-31 14:47:00,407 - __main__ - INFO - Looking for search button
+2025-03-31 14:47:00,536 - __main__ - INFO - Found 1 potential search buttons
+2025-03-31 14:47:00,686 - __main__ - INFO - Clicked search button
+2025-03-31 14:47:02,808 - __main__ - INFO - Entered search keywords: AI,tech,startup
+2025-03-31 14:47:07,822 - __main__ - INFO - Finding up to 5 event links
+2025-03-31 14:47:07,831 - __main__ - INFO - Finding up to 5 event links from search results
+2025-03-31 14:47:12,914 - __main__ - INFO - Current URL: https://lu.ma/sf
+2025-03-31 14:47:23,023 - __main__ - INFO - Found 45 total links, filtering for event links
+2025-03-31 14:47:23,174 - __main__ - INFO - Found 0 event links
+2025-03-31 14:47:23,174 - __main__ - ERROR - No event links found. Exiting.
+2025-03-31 14:47:23,174 - __main__ - INFO - Closing WebDriver
